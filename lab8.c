@@ -19,14 +19,12 @@ int main() {
 
     int C[ROWS][COLS];
     
-    // Складання матриць A і B -> C
     for (int i = 0; i < ROWS; i++) {
         for (int j = 0; j < COLS; j++) {
             C[i][j] = A[i][j] + B[i][j];
         }
     }
 
-    // Вивід результату складання
     printf("Матриця C (результат складання A + B):\n");
     for (int i = 0; i < ROWS; i++) {
         for (int j = 0; j < COLS; j++) {
@@ -35,7 +33,6 @@ int main() {
         printf("\n");
     }
 
-    // Пошук найбільшого серед від’ємних елементів
     int max_negative;
     int found = 0;
     int max_row = -1, max_col = -1;
